@@ -9,6 +9,7 @@
     <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('/assets/css/common/bootstrap.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ asset('/assets/css/common/plyr.min.css') }}">
 
     <link rel="stylesheet" href="{{ asset('/assets/css/application/fileupload.css') }}">
     <link rel="stylesheet" href="{{ asset('/assets/css/application/application.css') }}">
@@ -254,7 +255,7 @@
                                     <span>
                                         <i class="fa-solid fa-video text-white"></i>
                                         &nbsp;
-                                        0/1をリテイク</span>
+                                    </span>
                                 </div>
                             </div>
 
@@ -265,7 +266,15 @@
                                 <div class="w-100 text-center">
                                     <div class="col-xl-12">
                                         <div class="file-upload-contain">
-                                            <input id="multiplefileupload" type="file" accept="*.* " multiple=false />
+                                            <div class="file-drop-zone clickable" tabindex="-1">
+                                                <div class="file-drop-zone-title">
+                                                    <div class="upload-area">
+                                                        <p class="file_preview">ここにファイルをドラッグ アンド ドロップしますまた</p>
+                                                        <div> <button class="btn_upload">ブラウズ</button> </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <input id="fileupload" type="file" accept="*.* " multiple=false />
                                         </div>
                                     </div>
                                 </div>
@@ -275,9 +284,6 @@
                     </div>
 
                     <!-- FINISH BUTTON -->
-                    <div class="w-100 d-flex align-items-center justify-content-center">
-                        <button class="btn rounded-5 text-white align-self-center mb-5" id="test_finish"><span>テスト完了</span></button>
-                    </div>
                 </div>
                 <!-- FILE -->
                 <div class="test-ai tab-content " id="tab-5">
@@ -369,10 +375,8 @@
                         <div class="m-auto">
                             <div class="test-title">
                                 <div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-chat-left-dots-fill" viewBox="0 0 16 16">
-                                        <path
-                                            d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left-dots-fill" viewBox="0 0 16 16">
+                                        <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
                                     </svg>
                                 </div>
 
@@ -427,12 +431,10 @@
                                                     <button type="button" class="btn btn-primary btn-sm" data-mdb-ripple-color="dark">Let's Chat
                                                         App</button>
                                                 </div> -->
-                                <div class="card-body overflow-y-auto" data-mdb-perfect-scrollbar="true"
-                                    style="position: relative; height: 400px">
+                                <div class="card-body overflow-y-auto" data-mdb-perfect-scrollbar="true" style="position: relative; height: 400px">
 
                                     <div class="d-flex flex-row justify-content-start">
-                                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
-                                            alt="avatar 1" style="width: 45px; height: 100%;">
+                                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp" alt="avatar 1" style="width: 45px; height: 100%;">
                                         <div>
                                             <p class="small p-2 ms-3 mb-1 rounded-3 chat-message" style="background-color: #f5f6f7;">
                                                 こんにちは。</p>
@@ -459,13 +461,11 @@
                                             <p class="small me-3 mb-3 rounded-3 text-muted d-flex justify-content-end">
                                                 00:06</p>
                                         </div>
-                                        <img src="https://www.pngitem.com/pimgs/m/122-1223088_one-bot-discord-avatar-hd-png-download.png"
-                                            alt="avatar 1" style="width: 45px; height: 100%;">
+                                        <img src="https://www.pngitem.com/pimgs/m/122-1223088_one-bot-discord-avatar-hd-png-download.png" alt="avatar 1" style="width: 45px; height: 100%;">
                                     </div>
 
                                     <div class="d-flex flex-row justify-content-start mb-4">
-                                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
-                                            alt="avatar 1" style="width: 45px; height: 100%;">
+                                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp" alt="avatar 1" style="width: 45px; height: 100%;">
                                         <div>
                                             <p class="small p-2 ms-3 mb-1 rounded-3 chat-message" style="background-color: #f5f6f7;">
                                                 こんにちは。こんにちは。こんにちは。</p>
@@ -480,10 +480,8 @@
 
                                 </div>
                                 <div class="card-footer text-muted d-flex justify-content-start align-items-center p-3">
-                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
-                                        alt="avatar 3" style="width: 40px; height: 100%;">
-                                    <input type="text" class="form-control form-control-lg"
-                                        id="exampleFormControlInput1" placeholder="Type message">
+                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp" alt="avatar 3" style="width: 40px; height: 100%;">
+                                    <input type="text" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="Type message">
                                     <a class="ms-1 text-muted" href="#!"><i class="fas fa-paperclip"></i></a>
                                     <a class="ms-3 text-muted" href="#!"><i class="fas fa-smile"></i></a>
                                     <a class="ms-3" href="#!"><i class="fas fa-paper-plane"></i></a>
@@ -495,8 +493,7 @@
 
                     <!-- FINISH BUTTON -->
                     <div class="w-100 d-flex align-items-center justify-content-center">
-                        <button class="btn rounded-5 text-white align-self-center mb-5"
-                            id="test_finish"><span>テスト完了</span></button>
+                        <button class="btn rounded-5 text-white align-self-center mb-5" id="test_finish"><span>テスト完了</span></button>
                     </div>
                 </div>
             </div>
@@ -526,7 +523,7 @@
                             </div>
                         </div>
                         <div class="w-100 text-center mb-4">
-                            <button id="restart_test" class="bg-white rounded-5 bg-red">
+                            <button id="restart_test" class="bg-white rounded-5 bg-red" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                 <svg id="Group_2290" data-name="Group 2290" xmlns="http://www.w3.org/2000/svg" width="18.5" height="18.5" viewBox="0 0 18.5 18.5">
                                     <g id="Group_2289" data-name="Group 2289" opacity="0">
                                         <path id="Path_132" data-name="Path 132" d="M18.5,0H0V18.5H18.5Z" fill="#4ca7ee" />
@@ -995,7 +992,7 @@
     </main>
     <footer>
         <div class="container-fluid">
-            <div class="container  max-1200 d-flex flex-column flex-sm-column flex-md-column flex-lg-row align-items-center align-items-sm-center align-items-md-center align-items-xs-center justify-content-lg-between">
+            <div class="container max-1200 d-flex flex-column flex-sm-column flex-md-column flex-lg-row align-items-center align-items-sm-center align-items-md-center align-items-xs-center justify-content-lg-between">
                 <a href="/">
                     <img src="./assets/img/logo01.png" class="display-block w-auto" alt="logo">
                 </a>
@@ -1014,10 +1011,29 @@
             <span>Copyright © PROS Co., Ltd. All Rights Reserved.</span>
         </div>
     </footer>
-
-    <script src="{{ asset('/assets/js/common/bootstrap.js') }}"></script>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">確認</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                テストを再開しますか？
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">キャンセル</button>
+                    <button type="button" class="btn btn-primary" id="restart">確認</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <script src="{{ asset('/assets/js/common/jquery-3.7.0.min.js') }}"></script>
-    <script src="{{ asset('/assets/js/application/fileupload.js') }}"></script>
+    <!-- <script src="{{ asset('/assets/js/common/bootstrap.js') }}"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    
+    <!-- <script src="{{ asset('/assets/js/application/fileupload.js') }}"></script> -->
     <script src="{{ asset('/assets/js/common/plyr.min.js') }}"></script>
     <!-- Include the Quill library -->
     <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>

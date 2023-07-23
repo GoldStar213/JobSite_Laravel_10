@@ -272,7 +272,7 @@ footer .container-fluid:last-child {
 
 /* file upload */
 
-#multiplefileupload {
+#fileupload {
   display: none;
 }
 
@@ -357,6 +357,7 @@ footer .container-fluid:last-child {
   max-height: 540px;
   max-width: 446px;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 /* .answer-list{
@@ -545,6 +546,10 @@ td.active {
 
 #restart_test {
   padding: 0.688rem 2rem;
+}
+
+.kv-file-content{
+  display: none!important;
 }
 
 #chat2 .form-control {
