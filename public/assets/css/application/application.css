@@ -383,6 +383,11 @@ footer .container-fluid:last-child {
   .answer-list {
     max-width: 318px;
   }
+
+  .test-flow .no {
+    width: 2.125rem;
+    height: 2.125rem;
+  }
 }
 
 .answer-item.active {
@@ -554,17 +559,7 @@ td.active {
 
 #chat2 .form-control {
   border-color: transparent;
-<<<<<<< HEAD
-  }
-  
-  #chat2 .form-control:focus {
-  border-color: transparent;
-  box-shadow: inset 0px 0px 0px 1px transparent;
-  }
-  
-  .divider:after,
-  .divider:before {
-=======
+  <<<<<<< HEAD
 }
 
 #chat2 .form-control:focus {
@@ -574,13 +569,23 @@ td.active {
 
 .divider:after,
 .divider:before {
->>>>>>> 59e81c0d6fe04295f57ab6e2c8c1af140ff23e36
-  content: "";
+  =======
+}
+
+#chat2 .form-control:focus {
+  border-color: transparent;
+  box-shadow: inset 0px 0px 0px 1px transparent;
+}
+
+.divider:after,
+.divider:before {
+  >>>>>>>59e81c0d6fe04295f57ab6e2c8c1af140ff23e36 content: "";
   flex: 1;
   height: 1px;
   background: #eee;
-<<<<<<< HEAD
-  }
+  <<<<<<< HEAD
+}
+
 =======
 }
 
@@ -593,4 +598,5 @@ td.active {
   margin-left: auto;
   margin-right: 0;
 }
->>>>>>> 59e81c0d6fe04295f57ab6e2c8c1af140ff23e36
+
+>>>>>>>59e81c0d6fe04295f57ab6e2c8c1af140ff23e36
