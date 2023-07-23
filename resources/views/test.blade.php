@@ -1034,18 +1034,18 @@
                     <h1 class="modal-title fs-5" id="staticBackdropLabel">ユーザー情報入力</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body fs-14">
                     <form action="#" method="post">
                         <div class="mb-3">
-                            <label for="infro_name" class="form-label">名前</label>
+                            <label for="infro_name" class="form-label ms-3">名前</label>
                             <input type="text" class="form-control rounded-pill" id="infro_name" placeholder="名前入力">
                         </div>
                         <div class="mb-3">
-                            <label for="infro_email" class="form-label">メールアドレス</label>
+                            <label for="infro_email" class="form-label ms-3">メールアドレス</label>
                             <input type="email" class="form-control rounded-pill" id="infro_email" placeholder="メールアドレス入力">
                         </div>
                         <div class="mb-3">
-                            <label for="infro_phone_number" class="form-label">電話番号</label>
+                            <label for="infro_phone_number" class="form-label ms-3">電話番号</label>
                             <input type="text" class="form-control rounded-pill" id="infro_phone_number" placeholder="電話番号入力">
                         </div>
                     </form>
