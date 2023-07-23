@@ -110,7 +110,7 @@ $(document).ready(async function () {
     $(".test-complete").removeClass("d-block").addClass("d-none");
     $(".meeting-book").removeClass("d-none").addClass("d-block");
   })
-  $("#meeting_book_ok, #meeting_book_skip1").click(function () {
+  $("#information_ok, #meeting_book_skip1").click(function () {
     $(".meeting-book").removeClass("d-block").addClass("d-none");
     $(".congratulation").removeClass("d-none").addClass("d-block");
   })

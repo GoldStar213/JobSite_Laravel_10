@@ -511,7 +511,7 @@
                             &nbsp;&nbsp;
                             <span>
                                 質問2
-                            </span>  
+                            </span>
                         </div>
                         <div class="w-100 pl-md-0 pl-lg-73">
                             <div class="test-title">
@@ -900,7 +900,7 @@
                     </table>
                 </div>
                 <div class="w-100 text-center">
-                    <button class="text-white rounded-5 mb-5 " id="meeting_book_ok">確認</button>
+                    <button class="text-white rounded-5 mb-5 " id="meeting_book_ok" data-bs-toggle="modal" data-bs-target="#input_information">確認</button>
                     <button class="rounded-5 mb-5 bg-white " id="meeting_book_skip1">スキップ</button>
                 </div>
             </div>
@@ -1018,7 +1018,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                テストを再開しますか？
+                    テストを再開しますか？
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">キャンセル</button>
@@ -1027,11 +1027,41 @@
             </div>
         </div>
     </div>
-    
+    <div class="modal fade" id="input_information" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">ユーザー情報入力</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="post">
+                        <div class="mb-3">
+                            <label for="infro_name" class="form-label">名前</label>
+                            <input type="text" class="form-control rounded-pill" id="infro_name" placeholder="名前入力">
+                        </div>
+                        <div class="mb-3">
+                            <label for="infro_email" class="form-label">メールアドレス</label>
+                            <input type="email" class="form-control rounded-pill" id="infro_email" placeholder="メールアドレス入力">
+                        </div>
+                        <div class="mb-3">
+                            <label for="infro_phone_number" class="form-label">電話番号</label>
+                            <input type="text" class="form-control rounded-pill" id="infro_phone_number" placeholder="電話番号入力">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">キャンセル</button>
+                    <button type="button" class="btn btn-primary" id="information_ok" data-bs-dismiss="modal">確認</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="{{ asset('/assets/js/common/jquery-3.7.0.min.js') }}"></script>
     <!-- <script src="{{ asset('/assets/js/common/bootstrap.js') }}"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
-    
+
     <!-- <script src="{{ asset('/assets/js/application/fileupload.js') }}"></script> -->
     <script src="{{ asset('/assets/js/common/plyr.min.js') }}"></script>
     <!-- Include the Quill library -->
