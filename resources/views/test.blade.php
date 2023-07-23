@@ -511,8 +511,7 @@
                             &nbsp;&nbsp;
                             <span>
                                 質問2
-
-                            </span>
+                            </span>  
                         </div>
                         <div class="w-100 pl-md-0 pl-lg-73">
                             <div class="test-title">
